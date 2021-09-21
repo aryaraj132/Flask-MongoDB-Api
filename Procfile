@@ -1,2 +1,2 @@
-release: pip install -r requirement.txt
+release: pip install -r requirements.txt
 web: gunicorn app:app
