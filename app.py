@@ -2,8 +2,8 @@ from flask import Flask, request
 import pymongo, json
 from bson import json_util
 app = Flask(__name__)
-client = pymongo.MongoClient("mongodb+srv://aryaraj132:947121@cluster0.9mn0b.mongodb.net/DB01?retryWrites=true&w=majority")
-db = client.DB01
+client = pymongo.MongoClient("mongodb+srv://<username>:<password>@cluster0.9mn0b.mongodb.net/<database_name>?retryWrites=true&w=majority")
+db = client.database_name
 
 
 @app.route('/get-data', methods=['GET', 'POST'])
